@@ -1,48 +1,40 @@
+h1{
+    font-family: PaybAck;
+    font-size: 90px;
+    text-align: center;
+    color: rgb(9, 226, 9);
+    text-shadow:2px #E2E3E2;
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    
+}
+body{
+
+    background-image: url('../images/flapp.png');
+    background-size: cover;
 }
 
 
-body {
-
-background-image: url('../images/flapp.png');
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
-width: 100vw;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center;
-} 
-
-
 #game {
-width: 800px;
-height: 800px;
-background-color: rgb(123, 222, 255);
-background-size: cover;
-background-repeat: no-repeat;
-background-position: center;
+width: 1500px;
+height: 700px;
 border: 6px solid white;
 margin: auto;
+background-color: rgb(38, 211, 241);
 overflow: hidden;
+
 }
 
 
 
 #pipe {
 width: 110px;
-height: 800px;
+height: 700px;
 background: #E2E3E2;
-background: -webkit-linear-gradient(left, #E2E3E2, #1EC705);
-background: -moz-linear-gradient(left, #E2E3E2, #1EC705);
-background: linear-gradient(to right, #E2E3E2, #1EC705);
+background: -webkit-linear-gradient(left, #E2E3E2, (9, 226, 9));
+background: -moz-linear-gradient(left, #E2E3E2, (9, 226, 9));
+background: linear-gradient(to right, #E2E3E2, rgb(9, 226, 9));
 position: relative;
-left: 800px;
+left: 1500px;
 animation: pipe 2s infinite linear;
 }
 
@@ -50,7 +42,7 @@ animation: pipe 2s infinite linear;
 
 
 @keyframes pipe {
-0%  {left: 800px;}
+0%  {left: 1500px;}
 100% {left: -105px;}   
 }
 
@@ -59,10 +51,10 @@ animation: pipe 2s infinite linear;
 
 #hole {
     width: 115px;
-    height: 250px;
-    top: -750px;
+    height: 200px;
+    top: -450px;
     left: 800px;
-    background-color: rgb(123, 222, 255);
+    background-color: rgb(38, 211, 241);
     position: relative;
     animation: pipe 2s infinite linear;
 }
@@ -70,30 +62,13 @@ animation: pipe 2s infinite linear;
 
 
 #bird{
-width: 70px;
-height: 70px;
-background-image: url("images/angry-bird-green-icon.png");
+width: 65px;
+height: 60px;
+background-image: url("images/angry-bird-green-icon.png");  
 background-repeat: no-repeat;
-top: 500px;
 position: absolute;
+top:auto;
 }
 
-.jumpUp {
-    animation: rotateUp 0.2s;
-    animation-fill-mode: forwards;
-}
 
-.down {
-    animation: rotateDown 0.2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes rotateUp {
-    0%{ transform: rotate(0deg)}
-    100%{transform: rotate(-35deg)}
-}
-
-@keyframes rotateDown {
-    0%{ transform: rotate(0deg)}
-    100%{transform: rotate(35deg)}
-}
+/*-650px, -250
